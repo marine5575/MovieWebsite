@@ -1,0 +1,24 @@
+[2.0 Introduction]
+ReactJS: UI를 interactive하게 만들어줌
+
+[2.1 Before React]
+데이터가 변경되어도 HTML이 새로고침되지 않음
+
+1. HTML 만듦
+2. JS로 땡겨오기
+3. addEventListener
+4. data update
+5. HTML update
+
+react, react-dom 가져와야됨
+
+[2.2 Our First React Element]
+React.createElement("TAG_NAME");
+
+ReactJS: interactive UI를 가능하게 해주는 library (like 엔진)
+react-dom: react 요소들을 HTML에 두는 역할을 함
+
+render: 사용자에게 보여줌
+JS를 만들고 그걸 HTML으로 변경해줌
+=> 유저에게 보여줄 부분을 컨트롤 가능. 업데이트가 필요할 때 결과물인 HTML을 직접 업데이트함
+
