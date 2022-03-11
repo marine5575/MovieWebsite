@@ -1,24 +1,23 @@
-[2.0 Introduction]
-ReactJS: UI를 interactive하게 만들어줌
+[3.0 Understanding State]
+state: 바뀌는 data가 저장되는 곳
+comp를 다시 렌더링해야만 UI가 갱신됨
+값을 바꿀 때마다 렌더링하는 것을 잊으면 안 됨
+☆ReactJS는 UI에서 바뀐 부분만 업데이트함☆
+<- 이전에 렌더링된 comp가 무엇인지 파악하고 변경된 부분만 갱신
 
-[2.1 Before React]
-데이터가 변경되어도 HTML이 새로고침되지 않음
+기존 JS: 노드 정보가 바뀔 때마다 노드 트리를 처음부터 다시 생성(5단계)
+ReactJS: 가상 DOM을 써서 우리 시야에 보이는 부분만 수정해서 보여주고, 모든 update가 끝나면 일괄로 합쳐서 실제 DOM에 던져줌
 
-1. HTML 만듦
-2. JS로 땡겨오기
-3. addEventListener
-4. data update
-5. HTML update
+[3.1 setState part One]
+React.useState() => [data, data를 바꿀 수 있는 함수]
+배열 요소에 이름 붙일 땐 구조분해할당 (e.g., const food = ["tomato", "potato"]; const [myFav, secondFav] = food;)
 
-react, react-dom 가져와야됨
+[3.2 setState part Two]
+modifier(VALUE) -> VALUE 값으로 갱신하고 다시 렌더링해줌
+object를 const 로 지정할 경우 주소가 참조 => 해당 객체 내의 값은 변경해도 ok
+재할당이 필요한 변수가 아니라면 const를 사용하는 것이 안전 <- const는 항상 같은 객체를 가리키고 있기 때문
 
-[2.2 Our First React Element]
-React.createElement("TAG_NAME");
-
-ReactJS: interactive UI를 가능하게 해주는 library (like 엔진)
-react-dom: react 요소들을 HTML에 두는 역할을 함
-
-render: 사용자에게 보여줌
-JS를 만들고 그걸 HTML으로 변경해줌
-=> 유저에게 보여줄 부분을 컨트롤 가능. 업데이트가 필요할 때 결과물인 HTML을 직접 업데이트함
+[3.3 Recap]
+setCounter()을 가지고 state를 변경하면 변경된 값을 가지고 다시 렌더링됨 (comp 재생성 후 실행)
+data가 바뀔 때마다 comp를 다시 렌더링하고 UI 변경
 

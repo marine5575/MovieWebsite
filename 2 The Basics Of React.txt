@@ -1,0 +1,45 @@
+[2.0 Introduction]
+ReactJS: UI를 interactive하게 만들어줌
+
+[2.1 Before React]
+데이터가 변경되어도 HTML이 새로고침되지 않음
+
+1. HTML 만듦
+2. JS로 땡겨오기
+3. addEventListener
+4. data update
+5. HTML update
+
+react, react-dom 가져와야됨
+
+[2.2 Our First React Element]
+React.createElement("TAG_NAME");
+
+ReactJS: interactive UI를 가능하게 해주는 library (like 엔진)
+react-dom: react 요소들을 HTML에 두는 역할을 함
+
+render: 사용자에게 보여줌
+JS를 만들고 그걸 HTML으로 변경해줌
+=> 유저에게 보여줄 부분을 컨트롤 가능. 업데이트가 필요할 때 결과물인 HTML을 직접 업데이트함
+
+[2.3 Events in React]
+property에 직접 event listener를 넣을 수 있음 (e.g., onClick)
+ReactJS는 interactivity를 위해 제작됨
+
+[2.4 Recap]
+createElement(HTML태그, props, content);
+props 안에서 event listener를 등록할 수 있음 => ReactJS의 강력한 점!
+
+[2.5 JSX]
+JSX => JS를 확장한 문법. HTML처럼 작성하지만 React처럼 동작함
+브라우저는 JSX를 그대로 이해할 수 x
+따라서 Babel 사용하여 브라우저가 JSX를 이해할 수 있도록 함
+Babel로 변환된건 element 탭 상의 위쪽에 있는 script 태그에 존재함
+
+[2.6 JSX part Two]
+HTML 컴포넌트들을 포함하기 위해 필요한 것들
+1. 함수로 만들어줌
+2. <함수이름 />
+컴포넌트의 첫 글자는 반드시 ☆대문자★여야 함! => 소문자는 HTML 태그라고 취급함
+JSX는 app을 여러가지 작은 요소로 나누어 관리할 수 있게 해줌
+JSX 변수와 comp를 혼용하면 헷갈릴 수 있음 => 구분해서 작성하자
