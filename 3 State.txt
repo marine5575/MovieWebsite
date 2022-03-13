@@ -38,3 +38,10 @@ ReactJS는 event를 최적화해서 발생시키기 때문에 SyntheticBaseEvent
 [3.6 State Practice part One]
 input의 value를 state와 연결시켜주는 이유는 input값을 외부에서도 수정하기 위함
 
+[3.9 Final Practice and Recap]
+comp 안에 comp를 넣는 것 가능  e.g., <MinutesToHours />
+
+다시 렌더링되는 조건
+1. props이 바뀔때
+2. state가 바뀔때
+3. 부모 컴포넌트가 리렌더링 될 때
