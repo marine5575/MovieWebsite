@@ -17,6 +17,6 @@ comp는 항상 대문자로 시작해야 함
 원하는 type의 prop이 넘겨주지 않을 경우가 생길 수 있음 => prop-types
 prop의 type을 정해줌
 반드시 포함되기 바란다면 .isRequired 붙이기
-
+ 
 [4.3 Recap]
 props를 전달할 때의 이름과 받을 때의 이름은 동일해야함
