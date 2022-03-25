@@ -1,0 +1,22 @@
+[4.0 Props]
+DIVIDE & CONQUER => React.JS의 힘
+props: 부모 comp로부터 자식 comp에 data를 보낼 수 있게 해주는 방법
+comp => JSX를 반환하는 함수라고 봐도 ok
+comp는 유일하게 props라는 인자만 받음
+props는 JS의 object 형태로 전해짐
+prop의 이름을 바꾼다면 comp에 있는 인자 이름도 변경해야 함
+
+[4.1 Memo]
+custom comp에 onClick 같은 것을 전달해도 event listener가 아님. 그냥 props일 뿐!!
+React는 이벤트리스너 스타일을 지정해주지 않는다. 그저 props를 전달할 뿐
+React Memo를 통해 다시 렌더링되는 것을 막을 수 있음
+부모가 어떤 state 변경이 있을 때 자식 comp도 모두 다시 그려짐 -> 나중에 앱이 느려지는 원인이 될 수 있음
+comp는 항상 대문자로 시작해야 함
+
+[4.2 Prop Types]
+원하는 type의 prop이 넘겨주지 않을 경우가 생길 수 있음 => prop-types
+prop의 type을 정해줌
+반드시 포함되기 바란다면 .isRequired 붙이기
+
+[4.3 Recap]
+props를 전달할 때의 이름과 받을 때의 이름은 동일해야함
