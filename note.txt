@@ -1,0 +1,8 @@
+[5.0 Introduction]
+node.js 설치
+node -v
+npx
+우리가 여태 직접 설정했던 것을 자동으로 해줌
+auto-reload 기능 지원
+하나의 file 당 하나의 comp가 할당됨
+
