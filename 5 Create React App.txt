@@ -1,0 +1,17 @@
+[5.0 Introduction]
+node.js 설치
+node -v
+npx
+우리가 여태 직접 설정했던 것을 자동으로 해줌
+auto-reload 기능 지원
+하나의 file 당 하나의 comp가 할당됨
+
+[5.1 Tour of CRA]
+create-react-app의 좋은 점은 개발환경이 편해진다는 것
+다른 코드로 분리해서 작업하기 좋음
+css를 다루는 방법  ① css 파일 만들기 ②style prop 사용하기
+create-react-app의 포인트 : Divide & Conquer
+module을 사용하여 css 코드를 JS로 변형시킬 수 있음.
+대신 랜덤 class이름을 부여함 => style도 modular가 될 수 있음
+comp들이나 스타일들을 독립적이게 유지시켜줌
+1 컴포넌트 당 1개의 .js 파일을 가질 수 있어서 모듈화가 가능
