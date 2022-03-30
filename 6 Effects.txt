@@ -10,3 +10,16 @@ useMemo의 경우 "생성"함수에 관련된 기능. 생성자 함수가 고비
 useEffect의 경우는 api 호출, 타이머 등 렌더링 과정에서 한 번만 호출해도 될 기능이 렌더링마다 실행되거나, 호출과정에서 렌더링에 영향을 끼칠 수 있는 것을 모아서 따로 처리하기 위한 기능.
 둘의 결정적인 차이는 useEffect는 해당 컴포넌트의 렌더링이 완료된 후에 실행되지만, useMemo는 렌더링 중에 실행되는 차이
 
+[6.2 Deps]
+다른 state가 변경될 때 그거에 관련한 코드만 재실행되길 원할 때 => useEffect 사용
+두번째 인자에 지켜보길 원하는 변수를 넣음
+
+[6.3 Recap]
+react => state를 변화시키면 comp를 재실행함
+useEffect  ①처음 render 때만 실행 ②state 하나가 변경될 때 ③지켜보는 state들 중 한개 이상이 변경될 때
+
+[6.4 Cleanup]
+cleanup function
+destroy할 때 불러내는 것 가능 => useEffect이 새로운 함수를 return 하면 그게 comp가 파괴될 때 새로운 함수가 실행됨
+react 앱을 만들 때 cleanup 함수를 자주 사용하게 되지는 않음
+deps가 비어있으면 자동으로 컴포넌트가 파괴될 때 cleanup함수가 실행되는데 그 과정에서 리렌더링으로 useEffect함수가 실행되고 cleanup하면서 이전에 있던 이펙트 대신 새로운 이펙트 함수인 return함수가 실행되기 때문
